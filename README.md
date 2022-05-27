@@ -10,3 +10,8 @@ Then activate by: conda activate myEnv
 Deactivate by: conda deactivate myEnv
 
 List all venv by: conda env list
+
+Install Django with: conda install django
+when you install Django, it actually also installed a command line tool called: django-admin
+
+Create first project with: django-admin startproject first_project
