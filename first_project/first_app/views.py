@@ -10,4 +10,5 @@ from django.http import HttpResponse
 # Each view must return a httpresponse object
 
 def index(request):
-    return HttpResponse("Hello World")
+    return HttpResponse("<h1>Hello World</h1>")
+# You can pass html content in output

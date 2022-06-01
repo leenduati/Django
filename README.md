@@ -34,7 +34,7 @@ create a django aplication with: python manage.py startapp first_app
 A folder with first_app will be created:
 1. __init.py__ blank Python script that allows directory to be treated as a package
 2. admin.py register models which will then be used with Django's admin interface
-3. apps.py Here you cna place app specific configs
+3. apps.py Here you can place app specific configs
 4. models.py Storing application data models
 5. tests.py Store test functions for testing
 6. views.py Functions that handle requests and return responses
@@ -49,3 +49,11 @@ urlpatterns = [
     path('', views.index, name="hello"),
     path('admin/', admin.site.urls),
 ]
+
+# Challenge Lecture
+Complete the following tasks:
+1. Create a New Django Project: ProTwo
+2. Create a New Django App: AppTwo
+3. Create an INdex View that returns:
+        <em>My Second App </em>
+4. Link this view to the urls.py file
