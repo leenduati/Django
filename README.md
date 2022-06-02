@@ -57,3 +57,16 @@ Complete the following tasks:
 3. Create an INdex View that returns:
         <em>My Second App </em>
 4. Link this view to the urls.py file
+
+# URL Mappings
+Initially we did a direct mapping from views.py in the app to urls.py in the project folder
+We can also se the iclude() function from jango.conf.urls
+include() function allows us to look for a match with regular expressions and link back to our application's own urls.py file
+We need to add urls.py file in app
+add the flowing from urls.py file in the project, Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+
+If we match that pattern, the include() function basically tells Django to golook at the urls.py file inside of first_app folder
+It is necessary to keep or project's urls.py clean and modular. So we set the ref to the app, instead of listing them all in the main urls
+Check out urls.py in the project folder
